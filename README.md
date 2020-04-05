@@ -21,3 +21,8 @@ Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. "Imagenet classificati
 
 **[4]** Dropout (Just notes)
 Srivastava, Nitish, et al. "Dropout: a simple way to prevent neural networks from overfitting." Journal of Machine Learning Research 15.1 (2014): 1929-1958.
+[Paper](http://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
+
+**[5]** Mobile Net
+MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications (2017), Andrew G. Howard et al.
+[Paper](https://arxiv.org/pdf/1704.04861.pdf)
