@@ -6,3 +6,4 @@ Radford, A., Metz, L., & Chintala, S. (2015). Unsupervised representation learni
 
 - I have written a blog post on DC GAN. More information and explanation can be found there
 [Blog](https://medium.com/acmvit/the-infinite-art-machine-3a2decab85d9)
+- ![Img](output.png)
