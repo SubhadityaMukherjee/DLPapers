@@ -33,3 +33,7 @@
 **[7]** DC GAN
 - Radford, A., Metz, L., & Chintala, S. (2015). Unsupervised representation learning with deep convolutional generative adversarial networks. arXiv preprint arXiv:1511.06434.
 [Paper](https://arxiv.org/pdf/1511.06434.pdf%C3)
+
+**[8]** Spatial Transformer Networks
+- Jaderberg, M., Simonyan, K., & Zisserman, A. (2015). Spatial transformer networks. In Advances in neural information processing systems (pp. 2017-2025).
+[Paper](http://papers.nips.cc/paper/5854-spatial-transformer-networks.pdf)
