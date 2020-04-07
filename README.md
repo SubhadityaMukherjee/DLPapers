@@ -38,6 +38,6 @@
 - Jaderberg, M., Simonyan, K., & Zisserman, A. (2015). Spatial transformer networks. In Advances in neural information processing systems (pp. 2017-2025).
 [Paper](http://papers.nips.cc/paper/5854-spatial-transformer-networks.pdf)
 
-**[9]** Capsule Net
-- Sabour, S., Frosst, N., & Hinton, G. E. (2017). Dynamic routing between capsules. In Advances in neural information processing systems (pp. 3856-3866).
-[Paper](http://papers.nips.cc/paper/6975-dynamic-routing-between-capsules.pdf)
+**[9]** Squeeze Net
+- SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and< 1MB model size (2016), F. Iandola et al.
+[Paper](http://arxiv.org/pdf/1602.07360)
