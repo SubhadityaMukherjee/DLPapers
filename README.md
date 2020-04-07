@@ -37,3 +37,7 @@
 **[8]** Spatial Transformer Networks
 - Jaderberg, M., Simonyan, K., & Zisserman, A. (2015). Spatial transformer networks. In Advances in neural information processing systems (pp. 2017-2025).
 [Paper](http://papers.nips.cc/paper/5854-spatial-transformer-networks.pdf)
+
+**[9]** Capsule Net
+- Sabour, S., Frosst, N., & Hinton, G. E. (2017). Dynamic routing between capsules. In Advances in neural information processing systems (pp. 3856-3866).
+[Paper](http://papers.nips.cc/paper/6975-dynamic-routing-between-capsules.pdf)

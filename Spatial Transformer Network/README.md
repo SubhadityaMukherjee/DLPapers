@@ -1,26 +1,16 @@
+**[8]** Spatial Transformer Networks
+- Jaderberg, M., Simonyan, K., & Zisserman, A. (2015). Spatial transformer networks. In Advances in neural information processing systems (pp. 2017-2025).
+[Paper](http://papers.nips.cc/paper/5854-spatial-transformer-networks.pdf)
 
-**[2]** VGG net
- Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional networks for large-scale image recognition." arXiv preprint arXiv:1409.1556 (2014).
- [Paper](https://arxiv.org/pdf/1409.1556.pdf)
-
-## Tricks
-### Part1
-- max pool: 2, 2
-- conv: stri = 1, pad =1 ,ks = 3
-- Always add ReLU
-- Not all layers have max pool
-- Adding 1x1 layers increases non linearity
-> Network in network - 1x1
-- mom = .9, decay = 5*10^-4, dropout = 0.5
-- learning rate decay was used
-- Improve convergence
-  - Implicit regularization -> greater depth, smaller filter
-  - Pre init of some layers
-- Adding small amounts of noise to image -> increases accuracy
-- Fusion
-  - Averaging best soft max parts of multiple performing models
-
-### Part2
-- Object localization
-- Euclidean loss -> penalizes deviation of bounding box
-- No scale jittering
+# Tricks
+- Spatial transformer module
+  - separate object pose and deformation (texture+shape)
+  - try to restore original from warped
+  - can be used in any existing network
+  - Three parts:
+    - Localization network
+      - Input feature map -> hidden -> parameters of spatial transform
+    - Grid generator
+      - Set of points where image should be sampled for transform
+    - Sampler
+      - Output map is produced after combining both the outputs
