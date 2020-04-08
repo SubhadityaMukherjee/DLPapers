@@ -41,3 +41,7 @@
 **[9]** Squeeze Net
 - SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and< 1MB model size (2016), F. Iandola et al.
 [Paper](http://arxiv.org/pdf/1602.07360)
+
+**[10]** VAE (Auto-Encoding Variational Bayes)
+- Kingma, D. P., & Welling, M. (2013). Auto-encoding variational bayes. arXiv preprint arXiv:1312.6114.
+[Paper](https://arxiv.org/pdf/1312.6114.pdf?source=post_page---------------------------)
