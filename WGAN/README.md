@@ -6,7 +6,10 @@
 - [Dataset Link](https://github.com/Mckinsey666/Anime-Face-Dataset)
 
 # Tricks
-
+- No requirement of maintaining balance between discriminator and generator training
+- mode dropping is reduced
+- Use EM distance instead of KL divergence
+- alpha = .00005, c = .01, m = 64, ncrit = 5
 
 ## Examples
 - ![img1](eg1.jpeg)
