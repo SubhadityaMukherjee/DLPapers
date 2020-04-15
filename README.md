@@ -50,8 +50,10 @@
 - Dong, C., Loy, C. C., He, K., & Tang, X. (2014, September). Learning a deep convolutional network for image super-resolution. In European conference on computer vision (pp. 184-199). Springer, Cham.
 [Paper](https://www.researchgate.net/profile/Chen_Change_Loy/publication/264552416_Lecture_Notes_in_Computer_Science/links/53e583e50cf25d674e9c280e.pdf)
 
-
 **[12]** WGAN
 - Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein gan. arXiv preprint arXiv:1701.07875.
-[Paper](https://arxiv.org/pdf/1701.07875.pdf%20http://arxiv.org/abs/1701.07875
-)
+[Paper](https://arxiv.org/pdf/1701.07875.pdf%20http://arxiv.org/abs/1701.07875)
+
+**[13]** One cycle paper
+- Smith, L. N. (2017, March). Cyclical learning rates for training neural networks. In 2017 IEEE Winter Conference on Applications of Computer Vision (WACV) (pp. 464-472). IEEE.
+[Paper](https://arxiv.org/pdf/1506.01186.pdf%EF%BC%89%EF%BC%8C%E8%BF%99%E7%A7%8D%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7%E5%B0%86%E8%8E%B7%E5%BE%97%E6%9B%B4%E9%AB%98%E7%9A%84%E6%B5%8B%E8%AF%95%E5%87%86%E7%A1%AE%E7%8E%87%EF%BC%8C%E4%BD%86%E6%98%AF%E4%BD%A0%E7%9C%8B%E8%BF%99%E4%B8%AAlearning)

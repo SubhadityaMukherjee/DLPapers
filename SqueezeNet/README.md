@@ -3,7 +3,7 @@
 - SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and< 1MB model size (2016), F. Iandola et al.
 [Paper](http://arxiv.org/pdf/1602.07360)
 
-# Tricks
+# Notes
 - 510x smaller than AlexNet
 - Replace 3x3 with 1x1
 - Decrease no of input channles for 3x3

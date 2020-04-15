@@ -2,7 +2,7 @@
 - Jaderberg, M., Simonyan, K., & Zisserman, A. (2015). Spatial transformer networks. In Advances in neural information processing systems (pp. 2017-2025).
 [Paper](http://papers.nips.cc/paper/5854-spatial-transformer-networks.pdf)
 
-# Tricks
+# Notes
 - Spatial transformer module
   - separate object pose and deformation (texture+shape)
   - try to restore original from warped

@@ -3,7 +3,7 @@ MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applicatio
 [Paper](https://arxiv.org/pdf/1704.04861.pdf)
 
 
-## Tricks
+## Notes
 - All layers except first(normal one for that) :nxm Depthwise Conv->BN->ReLU->1x1 Conv->BN->ReLU
 - Depthwise separable filters : Add group = no of input channels in Conv2d
   - Splits it into layers
@@ -19,4 +19,4 @@ MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applicatio
 - AvgPool at the end
 -RMSProp
 - Very little or no weight decay for Depthwise filters
-> In effect-> Width, resolution multiplier 
+> In effect-> Width, resolution multiplier

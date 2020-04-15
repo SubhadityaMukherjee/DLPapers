@@ -4,7 +4,7 @@
  [Paper](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf)
 
 
-## Tricks
+## Notes
 - Residual functions
 - SGD
 - Adding more layers (to deep) -> higher training error
