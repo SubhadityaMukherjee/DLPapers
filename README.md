@@ -54,10 +54,13 @@
 - Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein gan. arXiv preprint arXiv:1701.07875.
 [Paper](https://arxiv.org/pdf/1701.07875.pdf%20http://arxiv.org/abs/1701.07875)
 
-**[13]** One cycle
+**[13]** One cycle (Just notes)
 - Smith, L. N. (2017, March). Cyclical learning rates for training neural networks. In 2017 IEEE Winter Conference on Applications of Computer Vision (WACV) (pp. 464-472). IEEE.
 [Paper](https://arxiv.org/pdf/1506.01186.pdf%EF%BC%89%EF%BC%8C%E8%BF%99%E7%A7%8D%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7%E5%B0%86%E8%8E%B7%E5%BE%97%E6%9B%B4%E9%AB%98%E7%9A%84%E6%B5%8B%E8%AF%95%E5%87%86%E7%A1%AE%E7%8E%87%EF%BC%8C%E4%BD%86%E6%98%AF%E4%BD%A0%E7%9C%8B%E8%BF%99%E4%B8%AAlearning)
 
-**[14]** A disciplined approach to neural network hyper-parameters
+**[14]** A disciplined approach to neural network hyper-parameters (Just notes)
 - Smith, L. N. (2018). A disciplined approach to neural network hyper-parameters: Part 1--learning rate, batch size, momentum, and weight decay. arXiv preprint arXiv:1803.09820.
 [Paper](https://arxiv.org/pdf/1803.09820)
+
+**[15]** Class Imbalance Problem (Just notes)
+- Buda, M., Maki, A., & Mazurowski, M. A. (2018). A systematic study of the class imbalance problem in convolutional neural networks. Neural Networks, 106, 249-259. [Paper](https://arxiv.org/pdf/1710.05381)
