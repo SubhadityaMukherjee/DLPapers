@@ -66,12 +66,14 @@
 - Buda, M., Maki, A., & Mazurowski, M. A. (2018). A systematic study of the class imbalance problem in convolutional neural networks. Neural Networks, 106, 249-259. [Paper](https://arxiv.org/pdf/1710.05381)
 
 **[16]** Perceptual Loss (For super resolution)
-- Johnson, J., Alahi, A., & Fei-Fei, L. (2016, October). Perceptual losses for real-time style transfer and super-resolution. In European conference on computer vision (pp. 694-711). Springer, Cham. [Paper](https://arxiv.org/pdf/1603.08155.pdf%7C)
 
 **[17]** Semantic segmentation DeepLab
 - Chen, L. C., Papandreou, G., Kokkinos, I., Murphy, K., & Yuille, A. L. (2017). Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs. IEEE transactions on pattern analysis and machine intelligence, 40(4), 834-848. [Paper](https://arxiv.org/pdf/1606.00915)
 
+**[18]** Neural Fabrics
+- Saxena, S., & Verbeek, J. (2016). Convolutional neural fabrics. In Advances in Neural Information Processing Systems (pp. 4053-4061).
 
 # TODO
 - Spatial pyramid pooling
 - SAGAN
+- Turing paper
