@@ -3,7 +3,7 @@
 - This repository contains implementations of various Deep learning papers
 - Models have been trained for a little time and will give better results if trained more. The focus was more on understanding rather than results
 - An index of papers implemented along with the citations and URLs are as follows
-> Note: Code in PyTorch
+> Note: Codes in Pytorch
 
 ## INDEX
 
