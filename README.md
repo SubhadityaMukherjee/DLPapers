@@ -66,14 +66,20 @@
 - Buda, M., Maki, A., & Mazurowski, M. A. (2018). A systematic study of the class imbalance problem in convolutional neural networks. Neural Networks, 106, 249-259. [Paper](https://arxiv.org/pdf/1710.05381)
 
 **[16]** Perceptual Loss (For super resolution)
+- Johnson, J., Alahi, A., & Fei-Fei, L. (2016, October). Perceptual losses for real-time style transfer and super-resolution. In European conference on computer vision (pp. 694-711). Springer, Cham. [Paper](https://arxiv.org/pdf/1603.08155.pdf%7C)
 
 **[17]** Semantic segmentation DeepLab
 - Chen, L. C., Papandreou, G., Kokkinos, I., Murphy, K., & Yuille, A. L. (2017). Deeplab: Semantic image segmentation with deep convolutional nets, atrous convolution, and fully connected crfs. IEEE transactions on pattern analysis and machine intelligence, 40(4), 834-848. [Paper](https://arxiv.org/pdf/1606.00915)
 
-**[18]** Neural Fabrics
+**[18]** Neural Fabrics(WIP)
 - Saxena, S., & Verbeek, J. (2016). Convolutional neural fabrics. In Advances in Neural Information Processing Systems (pp. 4053-4061).
+
+**[19]** Focal Loss 
+- Lin, T. Y., Goyal, P., Girshick, R., He, K., & Dollár, P. (2017). Focal loss for dense object detection. In Proceedings of the IEEE international conference on computer vision (pp. 2980-2988). [Paper](http://openaccess.thecvf.com/content_ICCV_2017/papers/Lin_Focal_Loss_for_ICCV_2017_paper.pdf)
+
+**[20]** Thinking machines - Turing (Just notes)
+- A. M. TURING, I.—COMPUTING MACHINERY AND INTELLIGENCE, Mind, Volume LIX, Issue 236, October 1950, Pages 433–460, https://doi.org/10.1093/mind/LIX.236.433. [Paper](https://oup.silverchair-cdn.com/UI/app/svg/pdf.svg)
 
 # TODO
 - Spatial pyramid pooling
 - SAGAN
-- Turing paper
