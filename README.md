@@ -7,6 +7,12 @@
 
 ## INDEX
 
+### MathBehind folder
+- This is an attempt to codify and understand the math behind Deep learning. Inspired from the Deep Learning book (Ian Goodfellow et al.)
+- All the explanations are in Jupyter Notebooks. (No README)
+  - **[1]** Karush–Kuhn–Tucker
+
+### Main
 **[1]** Alex Net
 - Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. "Imagenet classification with deep convolutional neural networks." Advances in neural information processing systems. 2012
 [Paper](http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
@@ -78,8 +84,9 @@
 - Lin, T. Y., Goyal, P., Girshick, R., He, K., & Dollár, P. (2017). Focal loss for dense object detection. In Proceedings of the IEEE international conference on computer vision (pp. 2980-2988). [Paper](http://openaccess.thecvf.com/content_ICCV_2017/papers/Lin_Focal_Loss_for_ICCV_2017_paper.pdf)
 
 **[20]** Thinking machines - Turing (Just notes)
-- A. M. TURING, I.—COMPUTING MACHINERY AND INTELLIGENCE, Mind, Volume LIX, Issue 236, October 1950, Pages 433–460, https://doi.org/10.1093/mind/LIX.236.433. [Paper](https://oup.silverchair-cdn.com/UI/app/svg/pdf.svg)
+- A. M. TURING, I.—COMPUTING MACHINERY AND INTELLIGENCE, Mind, Volume LIX, Issue 236, October 1950, Pages 433–460. [Paper](https://oup.silverchair-cdn.com/UI/app/svg/pdf.svg)
 
 # TODO
 - Spatial pyramid pooling
 - SAGAN
+- xresnet
