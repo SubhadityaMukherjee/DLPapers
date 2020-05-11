@@ -86,6 +86,12 @@
 **[20]** Thinking machines - Turing (Just notes)
 - A. M. TURING, I.—COMPUTING MACHINERY AND INTELLIGENCE, Mind, Volume LIX, Issue 236, October 1950, Pages 433–460. [Paper](https://oup.silverchair-cdn.com/UI/app/svg/pdf.svg)
 
+**[21]** Unets
+- Ronneberger, O., Fischer, P., & Brox, T. (2015, October). U-net: Convolutional networks for biomedical image segmentation. In International Conference on Medical image computing and computer-assisted intervention (pp. 234-241). Springer, Cham. [Paper](https://arxiv.org/pdf/1505.04597.pdf)
+
+**[22]** LSTM
+- Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. Neural computation, 9(8), 1735-1780.
+
 # TODO
 - Spatial pyramid pooling
 - SAGAN
