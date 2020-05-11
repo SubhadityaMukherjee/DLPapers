@@ -95,6 +95,9 @@
 **[23]** SELU
 - Klambauer, G., Unterthiner, T., Mayr, A., & Hochreiter, S. (2017). Self-normalizing neural networks. In Advances in neural information processing systems (pp. 971-980). [Paper](http://papers.nips.cc/paper/6698-self-normalizing-neural-networks.pdf)
 
+**[24]** swish
+- Ramachandran, P., Zoph, B., & Le, Q. V. (2017). Searching for activation functions. arXiv preprint arXiv:1710.05941. [Paper](https://arxiv.org/pdf/1710.05941;%20http://arxiv.org/abs/1710.05941)
+
 # TODO
 - Spatial pyramid pooling
 - SAGAN
