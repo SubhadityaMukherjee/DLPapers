@@ -1,0 +1,298 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"BA",
+				"BACKGROUND_PATH\tstatement"
+			],
+			[
+				"ima",
+				"image_data\tstatement"
+			],
+			[
+				"im",
+				"image_data\tstatement"
+			],
+			[
+				"re",
+				"return\tkeyword"
+			],
+			[
+				"c",
+				"conv3\tstatement"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"py",
+				"PyYapf: Format Document"
+			],
+			[
+				"forma",
+				"PyYapf: Format Document"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"mark",
+				"MarkdownLivePreview: Open Preview"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"for",
+				"User: Python PEP8 Autoformat"
+			],
+			[
+				"ta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"ins",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"syntax pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"mater",
+				"Activate Materialize Theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/media/subhaditya/DATA/LIBRARY/GRE/todo.md",
+		"/media/subhaditya/DATA/Github/PaperImplementations/Singing Voice Separation/Original/augment.py",
+		"/media/subhaditya/DATA/Github/PaperImplementations/Singing Voice Separation/Original/inference.py",
+		"/media/subhaditya/DATA/Github/PaperImplementations/Singing Voice Separation/Original/lib/dataset.py",
+		"/media/subhaditya/DATA/Github/PaperImplementations/Singing Voice Separation/Original/lib/layers.py",
+		"/media/subhaditya/DATA/Github/PaperImplementations/Singing Voice Separation/Original/lib/nets.py",
+		"/media/subhaditya/DATA/Github/PaperImplementations/Singing Voice Separation/Original/lib/spec_utils.py",
+		"/media/subhaditya/DATA/Github/PaperImplementations/Singing Voice Separation/main.py",
+		"/media/subhaditya/DATA/Github/PaperImplementations/Singing Voice Separation/Original/inference copy.py",
+		"/media/subhaditya/DATA/Github/naruto_hand/runner.py",
+		"/home/subhaditya/Documents/todo.todo",
+		"/home/subhaditya/Documents/ideas.todo",
+		"/media/subhaditya/DATA/LIBRARY/VIT/HCI/cat2.md",
+		"/media/subhaditya/DATA/Github/naruto_hand/.gitignore",
+		"/media/subhaditya/DATA/Github/naruto_hand/README.md",
+		"/media/subhaditya/DATA/Github/plant_disease/README.md",
+		"/media/subhaditya/DATA/Github/.git/ORIG_HEAD",
+		"/media/subhaditya/DATA/Github/USEFUL.txt",
+		"/media/subhaditya/DATA/Github/ideas.txt",
+		"/media/subhaditya/Subhaditya/MOVIES/Mirai Nikki/Mirai Nikki.txt",
+		"/media/subhaditya/Subhaditya/MOVIES/Prodigy (2017)/Prodigy (2017) .txt",
+		"/media/subhaditya/DATA/Github/kaggleOSMI-MentalHealth/empplo.html",
+		"/media/subhaditya/DATA/Github/kaggleOSMI-MentalHealth/age.html",
+		"/media/subhaditya/DATA/Github/kaggleOSMI-MentalHealth/inter.html",
+		"/media/subhaditya/DATA/Github/kaggleOSMI-MentalHealth/prevemp.html",
+		"/media/subhaditya/DATA/Github/kaggleOSMI-MentalHealth/remo.html",
+		"/media/subhaditya/DATA/Github/kaggleOSMI-MentalHealth/selfe.html",
+		"/media/subhaditya/DATA/Github/kaggleOSMI-MentalHealth/coun.html",
+		"/home/subhaditya/Downloads/rapidminer-studio-9.6.0/rapidminer-studio/RapidMiner-Studio.sh",
+		"/media/subhaditya/DATA/pipFr.txt",
+		"/home/subhaditya/yEd/yEd",
+		"/media/subhaditya/DATA/Github/mentalHealthAnalysis/data/scraped.txt",
+		"/media/subhaditya/DATA/LIBRARY/VIT/VISUAL/cat2.md",
+		"/media/subhaditya/DATA/LIBRARY/VIT/VISUAL/q",
+		"/media/subhaditya/DATA/COSMO/PLAYGROUND/flappy/flappy_bird.py",
+		"/home/subhaditya/.config/sublime-text-3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/home/subhaditya/.config/sublime-text-3/Packages/PlainTasks/PlainTasks (Linux).sublime-settings",
+		"/home/subhaditya/Documents/todo.md",
+		"/home/subhaditya/.imwheelrc",
+		"/home/subhaditya/yEd/yEd Graph Editor.desktop",
+		"/media/subhaditya/DATA/COSMO/PLAYGROUND/idekrnbutlol/main.py",
+		"/media/subhaditya/DATA/COSMO/PLAYGROUND/retinalBLA/Retina Blood Vessel Segmentation/models.py",
+		"/media/subhaditya/DATA/COSMO/PLAYGROUND/retinalBLA/Retina Blood Vessel Segmentation/train_retina.py",
+		"/media/subhaditya/DATA/COSMO/PLAYGROUND/flappy/game/flappy_bird.py",
+		"/tmp/kite_tutorial.py",
+		"/home/subhaditya/.config/sublime-text-3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "revert.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 325.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
