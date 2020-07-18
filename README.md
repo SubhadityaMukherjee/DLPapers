@@ -110,6 +110,12 @@
 **[27]** HRNet (WIP)
 - Wang, J., Sun, K., Cheng, T., Jiang, B., Deng, C., Zhao, Y., ... & Liu, W. (2020). Deep high-resolution representation learning for visual recognition. IEEE transactions on pattern analysis and machine intelligence. [Paper](https://arxiv.org/pdf/1908.07919)
 
+**[28]** Understanding Deep learning requires rethinking generalization (Just notes)
+- Zhang, C., Bengio, S., Hardt, M., Recht, B., & Vinyals, O. (2016). Understanding deep learning requires rethinking generalization. arXiv preprint arXiv:1611.03530. [Paper](https://arxiv.org/pdf/1611.03530.pdf?from=timeline&isappinstalled=0)
+
+**[29]** NVAE (WIP)
+- Vahdat, A., & Kautz, J. (2020). NVAE: A Deep Hierarchical Variational Autoencoder. arXiv preprint arXiv:2007.03898. [Paper](https://arxiv.org/abs/2007.03898)
+
 # TODO
 - Spatial pyramid pooling
 - SAGAN
