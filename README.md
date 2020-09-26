@@ -122,6 +122,10 @@
 **[31]** Computational Limits (Just notes)
 - Thompson, N. C., Greenewald, K., Lee, K., & Manso, G. F. (2020). The Computational Limits of Deep Learning. arXiv preprint arXiv:2007.05558. [Paper](https://arxiv.org/pdf/2007.05558)
 
+**[32]** What is the state of pruning
+- Blalock, D., Ortiz, J. J. G., Frankle, J., & Guttag, J. (2020). What is the state of neural network pruning?. arXiv preprint arXiv:2003.03033. [Paper](https://arxiv.org/pdf/2003.03033.pdf)
+
+
 # TODO
 - Spatial pyramid pooling
 - SAGAN
