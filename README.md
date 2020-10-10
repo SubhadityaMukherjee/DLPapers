@@ -125,8 +125,11 @@
 **[32]** What is the state of pruning
 - Blalock, D., Ortiz, J. J. G., Frankle, J., & Guttag, J. (2020). What is the state of neural network pruning?. arXiv preprint arXiv:2003.03033. [Paper](https://arxiv.org/pdf/2003.03033.pdf)
 
+**[33]** Super Resolution using Sub Pixel Convolutions
+- Shi, W., Caballero, J., Huszár, F., Totz, J., Aitken, A. P., Bishop, R., ... & Wang, Z. (2016). Real-time single image and video super-resolution using an efficient sub-pixel convolutional neural network. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 1874-1883).  [Paper](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Shi_Real-Time_Single_Image_CVPR_2016_paper.pdf)
 
-# TODO
-- Spatial pyramid pooling
-- SAGAN
-- xresnet
+**[34]** Google Keyboard Federated Learning(Notes only. refer to [35] for code)
+- Chen, M., Mathews, R., Ouyang, T., & Beaufays, F. (2019). Federated learning of out-of-vocabulary words. arXiv preprint arXiv:1903.10635.  [Paper](https://arxiv.org/pdf/1903.10635)
+
+**[35]** Federated Learning (original paper)
+- Konečný, J., McMahan, H. B., Yu, F. X., Richtárik, P., Suresh, A. T., & Bacon, D. (2016). Federated learning: Strategies for improving communication efficiency. arXiv preprint arXiv:1610.05492.  [Paper](https://arxiv.org/pdf/1610.05492)
