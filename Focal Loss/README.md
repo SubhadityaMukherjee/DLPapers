@@ -3,6 +3,10 @@ Lin, T. Y., Goyal, P., Girshick, R., He, K., & Dollár, P. (2017). Focal loss fo
 
 
 ## Notes
+
+- CE(p,y) = -log(p) if y = 1 else -log(1-p)
+- FL(p_l) = -alpha(1- p_t)^gamma * log(p_t)
+
 - Its good for huge imbalance apparently
 -  one-stage detectors that are applied over a regular, dense sampling of possible object locations have the potential to be faster and simpler
 - extreme foreground-background class imbalance encountered during training of dense detectors 

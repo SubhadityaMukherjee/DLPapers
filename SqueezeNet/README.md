@@ -14,7 +14,6 @@
   - Expand -> 1x1 and 3x3
 - Can be implemented in an FPGA
 
-> Note:
 SqueezeNet is one of several new CNNs that we have discovered while broadly exploring the de-
 sign space of CNN architectures. We hope that SqueezeNet will inspire the reader to consider and
 explore the broad range of possibilities in the design space of CNN architectures and to perform that exploration in a more systematic manner.
