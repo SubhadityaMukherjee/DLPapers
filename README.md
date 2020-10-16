@@ -1,9 +1,8 @@
 # DEEP LEARNING PAPERS
 
-- This repository contains implementations of various Deep learning papers
-- Models have been trained for a little time and will give better results if trained more. The focus was more on understanding rather than results
-- An index of papers implemented along with the citations and URLs are as follows
-> Note: Codes in Pytorch
+- This repository contains my notes for various Deep learning papers
+- The codes are being shifted to [ANOTHER REPO](https://github.com/SubhadityaMukherjee/pytorchTutorialRepo) for sake of reducing redundancy
+> Note: Codes in Pytorch (Some are in fastai but will be ported to pure pytorch soon)
 
 ## INDEX
 
