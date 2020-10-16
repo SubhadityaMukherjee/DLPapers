@@ -133,3 +133,6 @@
 
 **[35]** Federated Learning (original paper)
 - Konečný, J., McMahan, H. B., Yu, F. X., Richtárik, P., Suresh, A. T., & Bacon, D. (2016). Federated learning: Strategies for improving communication efficiency. arXiv preprint arXiv:1610.05492.  [Paper](https://arxiv.org/pdf/1610.05492)
+
+**[36]** LightSeg (only notes for now)
+- Emara, T., Abd El Munim, H. E., & Abbas, H. M. (2019, December). LiteSeg: A Novel Lightweight ConvNet for Semantic Segmentation. In 2019 Digital Image Computing: Techniques and Applications (DICTA) (pp. 1-7). IEEE.  ([Link](https://arxiv.org/pdf/1912.06683) 
