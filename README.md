@@ -24,7 +24,7 @@
  - Szegedy, Christian, et al. "Going deeper with convolutions." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015.
  [Paper](http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf)
 
-**[4]** Dropout (Just notes)
+**[4]** Dropout 
 - Srivastava, Nitish, et al. "Dropout: a simple way to prevent neural networks from overfitting." Journal of Machine Learning Research 15.1 (2014): 1929-1958.
 [Paper](http://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
 
@@ -32,7 +32,7 @@
 - MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications (2017), Andrew G. Howard et al.
 [Paper](https://arxiv.org/pdf/1704.04861.pdf)
 
-**[6]** Inceptionism
+**[6]** Inceptionism (Deep Dream)
 - Google Deep Dream [Link](https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html)
 
 **[7]** DC GAN
@@ -59,15 +59,15 @@
 - Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein gan. arXiv preprint arXiv:1701.07875.
 [Paper](https://arxiv.org/pdf/1701.07875.pdf%20http://arxiv.org/abs/1701.07875)
 
-**[13]** One cycle (Just notes)
+**[13]** One cycle 
 - Smith, L. N. (2017, March). Cyclical learning rates for training neural networks. In 2017 IEEE Winter Conference on Applications of Computer Vision (WACV) (pp. 464-472). IEEE.
 [Paper](https://arxiv.org/pdf/1506.01186.pdf%EF%BC%89%EF%BC%8C%E8%BF%99%E7%A7%8D%E5%A5%87%E6%8A%80%E6%B7%AB%E5%B7%A7%E5%B0%86%E8%8E%B7%E5%BE%97%E6%9B%B4%E9%AB%98%E7%9A%84%E6%B5%8B%E8%AF%95%E5%87%86%E7%A1%AE%E7%8E%87%EF%BC%8C%E4%BD%86%E6%98%AF%E4%BD%A0%E7%9C%8B%E8%BF%99%E4%B8%AAlearning)
 
-**[14]** A disciplined approach to neural network hyper-parameters (Just notes)
+**[14]** A disciplined approach to neural network hyper-parameters 
 - Smith, L. N. (2018). A disciplined approach to neural network hyper-parameters: Part 1--learning rate, batch size, momentum, and weight decay. arXiv preprint arXiv:1803.09820.
 [Paper](https://arxiv.org/pdf/1803.09820)
 
-**[15]** Class Imbalance Problem (Just notes)
+**[15]** Class Imbalance Problem 
 - Buda, M., Maki, A., & Mazurowski, M. A. (2018). A systematic study of the class imbalance problem in convolutional neural networks. Neural Networks, 106, 249-259. [Paper](https://arxiv.org/pdf/1710.05381)
 
 **[16]** Perceptual Loss (For super resolution)
@@ -82,7 +82,7 @@
 **[19]** Focal Loss
 - Lin, T. Y., Goyal, P., Girshick, R., He, K., & Dollár, P. (2017). Focal loss for dense object detection. In Proceedings of the IEEE international conference on computer vision (pp. 2980-2988). [Paper](http://openaccess.thecvf.com/content_ICCV_2017/papers/Lin_Focal_Loss_for_ICCV_2017_paper.pdf)
 
-**[20]** Thinking machines - Turing (Just notes)
+**[20]** Thinking machines - Turing 
 - A. M. TURING, I.—COMPUTING MACHINERY AND INTELLIGENCE, Mind, Volume LIX, Issue 236, October 1950, Pages 433–460. [Paper](https://oup.silverchair-cdn.com/UI/app/svg/pdf.svg)
 
 **[21]** Unets
@@ -115,10 +115,10 @@
 **[29]** NVAE (WIP)
 - Vahdat, A., & Kautz, J. (2020). NVAE: A Deep Hierarchical Variational Autoencoder. arXiv preprint arXiv:2007.03898. [Paper](https://arxiv.org/abs/2007.03898)
 
-**[30]** DRL and neuroscience (Just notes)
+**[30]** DRL and neuroscience 
 - Botvinick, M., Wang, J. X., Dabney, W., Miller, K. J., & Kurth-Nelson, Z. (2020). Deep Reinforcement Learning and Its Neuroscientific Implications. Neuron. [Paper](https://arxiv.org/pdf/2007.03750)
 
-**[31]** Computational Limits (Just notes)
+**[31]** Computational Limits 
 - Thompson, N. C., Greenewald, K., Lee, K., & Manso, G. F. (2020). The Computational Limits of Deep Learning. arXiv preprint arXiv:2007.05558. [Paper](https://arxiv.org/pdf/2007.05558)
 
 **[32]** What is the state of pruning
@@ -135,3 +135,12 @@
 
 **[36]** LightSeg (only notes for now)
 - Emara, T., Abd El Munim, H. E., & Abbas, H. M. (2019, December). LiteSeg: A Novel Lightweight ConvNet for Semantic Segmentation. In 2019 Digital Image Computing: Techniques and Applications (DICTA) (pp. 1-7). IEEE.  ([Link](https://arxiv.org/pdf/1912.06683) 
+
+**[37]** Training BatchNorm only Batchnorm
+- Frankle, J., Schwab, D. J., & Morcos, A. S. (2020). Training BatchNorm and Only BatchNorm: On the Expressive Power of Random Features in CNNs. arXiv preprint arXiv:2003.00152. [Paper](https://arxiv.org/pdf/2003.00152.pdf?_hsenc=p2ANqtz-8TTFgWldpCry8wTA8AaDTB6YXDsty18YvEhtOG4Q6pUcR4LScVKuWRU1zsPndtDoaAM6zuE4uy90iN-XIkdrRqsBLUAnRtZzhI4rGO3AnSCMg04pw&_hsmi=86037286&utm_campaign=The+Batch&utm_content=86037286&utm_medium=email&utm_source=hs_email) 
+
+**[38]** Mish
+- Misra, D. (2019). Mish: A self regularized non-monotonic neural activation function. arXiv preprint arXiv:1908.08681. [paper](https://arxiv.org/pdf/1908.08681)
+
+**[39]** ShuffleNet (WIP)
+- Zhang, X., Zhou, X., Lin, M., & Sun, J. (2018). Shufflenet: An extremely efficient convolutional neural network for mobile devices. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 6848-6856). [Paper](http://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_ShuffleNet_An_Extremely_CVPR_2018_paper.pdf)
