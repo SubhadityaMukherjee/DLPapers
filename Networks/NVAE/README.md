@@ -8,7 +8,7 @@
 - Nouveau VAE
 - depth-wise separable convolu- tions and batch normalization
 - residual parameterization of Normal distributions and its training is stabilized by spectral regularization.
-- first successful VAE applied to natural images as large as 256×256 pixels.
+- first successful VAE applied to natural images as large as 256x256 pixels.
 -  VAEs maximize the mutual information between the input and latent variables requiring the networks to retain the information content of the input data as much as possible.
 -  VAEs often respond differently to the over-parameterization in neural networks.
 -  The current state-of-the-art VAEs omit batch normalization (BN) to combat the sources of randomness that could potentially amplify their instability.

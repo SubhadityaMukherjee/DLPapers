@@ -10,10 +10,10 @@
 -  human pose estimation, semantic segmentation, and object detection
 -  HRNetV1, only outputs the high-resolution representation computed from the high-resolution convolution stream. We apply it to human pose estimation
 -  HRNetV2, combines the representations from all the high-to-low resolution parallel streams. We apply it to semantic segmentation
--  stem, which consists of two stride 2 3 × 3 convolutions decreasing the resolution to 1/4 , and subsequently the main body that outputs the representation with the same resolution ( 1/4 ).
+-  stem, which consists of two stride 2 3x3 convolutions decreasing the resolution to 1/4 , and subsequently the main body that outputs the representation with the same resolution ( 1/4 ).
 -  We start from a high-resolution convolution stream as the first stage, gradually add high-to-low resolution streams
--   (a) HRNetV1: only output the representation from the high-resolution convolution stream. (b) HRNetV2: Concatenate representations that are from all × 1 convolution is not shown for clarity). (c) HRNetV2p: form a feature pyramid from the representation by HRNetV representations
--   Heads -> HRNetV1. The output is the representation only from the high-resolution stream. Other three representations are ignored. HRNetV2. We rescale the low-resolution representations through bilinear upsampling without changing the number of channels to the high resolution, and concatenate the four representations, followed by a 1 × 1 convolution to mix the
+-   (a) HRNetV1: only output the representation from the high-resolution convolution stream. (b) HRNetV2: Concatenate representations that are from all 1x1 convolution is not shown for clarity). (c) HRNetV2p: form a feature pyramid from the representation by HRNetV representations
+-   Heads -> HRNetV1. The output is the representation only from the high-resolution stream. Other three representations are ignored. HRNetV2. We rescale the low-resolution representations through bilinear upsampling without changing the number of channels to the high resolution, and concatenate the four representations, followed by a 1x1 convolution to mix the
 four representations. HRNetV2p. We construct multi-level representations by downsampling the high-resolution representation output from HRNetV2 to multiple levels. .
 -    parallel convolution of the modularized block
 -    multi-resolution parallel convolutions, and multi-resolution fusion  The multi-resolution parallel convolution resembles the group convolution. It divides the input channels into several subsets of channels and performs a regular convolution over each subset over different spatial resolutions separately, while in the group convolution, the resolutions are the same
@@ -25,9 +25,9 @@ the k th keypoint.
 - We pretrain our network, which is augmented by a classification head shown in Figure 11, on ImageNet/ The
 classification head is described as below. First, the four-resolution feature maps are fed into a bottleneck and the output
 channels are increased from C , 2C , 4C , and 8C to 128, 256, 512, and 1024, respectively. Then, we downsample the high-
-resolution representation by a 2-strided 3 × 3 convolution outputting 256 channels and add it to the representation of the
+resolution representation by a 2-strided 3x3 convolution outputting 256 channels and add it to the representation of the
 second-high-resolution. This process is repeated two times to get 1024 feature channels over the small resolution. Last, we
-transform the 1024 channels to 2048 channels through a 1 × 1 convolution, followed by a global average pooling operation.
+transform the 1024 channels to 2048 channels through a 1x1 convolution, followed by a global average pooling operation.
 The output 2048-dimensional representation is fed into the classifier.
 
 - For semantic segmentation, the time cost of the HRNettraining is slightly smaller and for inference significantly smaller than PSPNet and DeepLabv3

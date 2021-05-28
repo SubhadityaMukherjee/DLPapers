@@ -1,5 +1,6 @@
-# Training Batchnorm only Batchnorm
+**[]** Training Batchnorm only Batchnorm
 
+Frankle, J., Schwab, D. J., & Morcos, A. S. (2020). Training batchnorm and only batchnorm: On the expressive power of random features in cnns. arXiv preprint arXiv:2003.00152.
 - Pytorch implementation of this [paper](https://arxiv.org/abs/2003.00152) 
 
 - @misc{frankle2020training,
