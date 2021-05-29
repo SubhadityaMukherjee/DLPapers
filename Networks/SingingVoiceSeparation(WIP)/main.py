@@ -1,16 +1,16 @@
 import argparse
-from datetime import datetime as dt
 import gc
 import json
 import os
 import random
+from datetime import datetime as dt
 
+import librosa
 import numpy as np
+import soundfile as sf
 import torch
 import torch.nn as nn
 
-import librosa
-import soundfile as sf
 
 # Split into train val
 def train_val_split(mix_dir, inst_dir, val_rate, val_filelist_json):

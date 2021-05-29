@@ -2,16 +2,17 @@
 # To add a new markdown cell, type '# %% [markdown]'
 # %%
 import os
-from tqdm import tqdm_notebook as tqdm
+
 from fastai.callbacks.hooks import *
 from fastai.utils.mem import *
 from fastai.vision import *
 from IPython import get_ipython
+from tqdm import tqdm_notebook as tqdm
 
 # %%
-get_ipython().run_line_magic('reload_ext', 'autoreload')
-get_ipython().run_line_magic('autoreload', '2')
-get_ipython().run_line_magic('matplotlib', 'inline')
+get_ipython().run_line_magic("reload_ext", "autoreload")
+get_ipython().run_line_magic("autoreload", "2")
+get_ipython().run_line_magic("matplotlib", "inline")
 
 
 os.environ["TORCH_HOME"] = "/media/subhaditya/DATA/COSMO/Datasets-Useful"
@@ -53,8 +54,9 @@ class UpSample(nn.Module):
     def __init__(self, inChannels, outChannels):
         super(UpSample, self).__init__()
         self.upsample = nn.UpsamplingBilinear2d(scale_factor=2)
-        self.conv = nn.Conv2d(inChannels, outChannels,
-                              kernel_size=3, stride=1, padding=1)
+        self.conv = nn.Conv2d(
+            inChannels, outChannels, kernel_size=3, stride=1, padding=1
+        )
         self.batch_norm = nn.BatchNorm2d(outChannels)
 
     def forward(self, x):
@@ -63,14 +65,17 @@ class UpSample(nn.Module):
         x = self.batch_norm(x)
         x = nn.ReLU(True)(x)
         return x
+
+
 # %%
 
 
 class DownSample(nn.Module):
     def __init__(self, inChannels, outChannels):
         super(DownSample, self).__init__()
-        self.conv = nn.Conv2d(inChannels, outChannels,
-                              kernel_size=3, stride=2, padding=1)
+        self.conv = nn.Conv2d(
+            inChannels, outChannels, kernel_size=3, stride=2, padding=1
+        )
         self.batch_norm = nn.BatchNorm2d(outChannels)
 
     def forward(self, x):
@@ -78,14 +83,17 @@ class DownSample(nn.Module):
         x = self.batch_norm(x)
         x = nn.ReLU(True)(x)
         return x
+
+
 # %%
 
 
 class SameRes(nn.Module):
     def __init__(self, inChannels, outChannels):
         super(SameRes, self).__init__()
-        self.conv = nn.Conv2d(inChannels, outChannels,
-                              kernel_size=3, stride=1, padding=1)
+        self.conv = nn.Conv2d(
+            inChannels, outChannels, kernel_size=3, stride=1, padding=1
+        )
         self.batch_norm = nn.BatchNorm2d(outChannels)
 
     def forward(self, x):
@@ -93,6 +101,8 @@ class SameRes(nn.Module):
         x = self.batch_norm(x)
         x = nn.ReLU(True)(x)
         return x
+
+
 # %%
 
 
@@ -131,21 +141,27 @@ class Net(nn.Module):
                     self.node_ops[layer][i].append(node)
                     if i == 0:
                         self.node_ops[layer][i].append(
-                            UpSample(self.channels, self.channels))
+                            UpSample(self.channels, self.channels)
+                        )
                     elif i == self.scales - 1:
                         self.node_ops[layer][i].append(
-                            DownSample(self.channels, self.channels))
-                        if layer == self.layers-1:
+                            DownSample(self.channels, self.channels)
+                        )
+                        if layer == self.layers - 1:
                             self.node_ops[layer][i].append(
-                                DownSample(self.channels, self.channels))
+                                DownSample(self.channels, self.channels)
+                            )
                     else:
                         self.node_ops[layer][i].append(
-                            DownSample(self.channels, self.channels))
+                            DownSample(self.channels, self.channels)
+                        )
                         self.node_ops[layer][i].append(
-                            UpSample(self.channels, self.channels))
-                        if layer == self.layers-1:
+                            UpSample(self.channels, self.channels)
+                        )
+                        if layer == self.layers - 1:
                             self.node_ops[layer][i].append(
-                                DownSample(self.channels, self.channels))
+                                DownSample(self.channels, self.channels)
+                            )
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 torch.nn.init.kaiming_normal(m.weight)
@@ -155,8 +171,7 @@ class Net(nn.Module):
                 m.bias.data.fill_(0)
 
     def forward(self, x):
-        node_activ = [[[] for i in range(self.scales)]
-                      for j in range(self.layers)]
+        node_activ = [[[] for i in range(self.scales)] for j in range(self.layers)]
         out = self.start_node(x)
         for layer in range(self.layers):
             if layer == 0:
@@ -165,36 +180,31 @@ class Net(nn.Module):
                         node_activ[layer][i] = self.node_ops[layer][i][0](out)
                     else:
                         node_activ[layer][i] = self.node_ops[layer][i][0](
-                            node_activ[layer][i-1])
+                            node_activ[layer][i - 1]
+                        )
             else:
                 for i in range(self.scales):
                     if i == 0:
-                        t1 = (node_activ[layer-1][i])
-                        t2 = self.node_ops[layer][i][1](
-                            node_activ[layer-1][i+1])
+                        t1 = node_activ[layer - 1][i]
+                        t2 = self.node_ops[layer][i][1](node_activ[layer - 1][i + 1])
                         t = self.node_ops[layer][i][0](t1 + t2)
                         node_activ[layer][i] = t
-                    elif i == self.scales-1:
-                        t1 = (node_activ[layer-1][i])
-                        t2 = self.node_ops[layer][i][1](
-                            node_activ[layer-1][i-1])
+                    elif i == self.scales - 1:
+                        t1 = node_activ[layer - 1][i]
+                        t2 = self.node_ops[layer][i][1](node_activ[layer - 1][i - 1])
 
-                        if layer == self.layers-1:
-                            t3 = self.node_ops[layer][i][2](
-                                node_activ[layer][i-1])
+                        if layer == self.layers - 1:
+                            t3 = self.node_ops[layer][i][2](node_activ[layer][i - 1])
                             t = self.node_ops[layer][i][0](t1 + t2 + t3)
                         else:
                             t = self.node_ops[layer][i][0](t1 + t2)
                         node_activ[layer][i] = t
                     else:
-                        t1 = (node_activ[layer-1][i])
-                        t2 = self.node_ops[layer][i][2](
-                            node_activ[layer-1][i+1])
-                        t3 = self.node_ops[layer][i][1](
-                            node_activ[layer-1][i-1])
-                        if layer == self.layers-1:
-                            t4 = self.node_ops[layer][i][3](
-                                node_activ[layer][i-1])
+                        t1 = node_activ[layer - 1][i]
+                        t2 = self.node_ops[layer][i][2](node_activ[layer - 1][i + 1])
+                        t3 = self.node_ops[layer][i][1](node_activ[layer - 1][i - 1])
+                        if layer == self.layers - 1:
+                            t4 = self.node_ops[layer][i][3](node_activ[layer][i - 1])
                             t = self.node_ops[layer][i][0](t1 + t2 + t3 + t4)
                         else:
                             t = self.node_ops[layer][i][0](t1 + t2 + t3)
@@ -208,9 +218,7 @@ class Net(nn.Module):
 
 # %%
 
-learn = Learner(
-    data, Net(), metrics=[accuracy], opt_func=AdamW, callback_fns=ShowGraph
-)
+learn = Learner(data, Net(), metrics=[accuracy], opt_func=AdamW, callback_fns=ShowGraph)
 
 # %%
 learn.unfreeze()

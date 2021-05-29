@@ -1,19 +1,20 @@
 #%%
-from fastai import *
-from fastai.vision import *
-import torch.onnx
-from torch.autograd import Variable
+import os
+
+import netron
 import torch
 import torch.nn as nn
-import torch.optim as optim
 import torch.nn.functional as F
-import netron
-
-import os
+import torch.onnx
+import torch.optim as optim
+from fastai import *
+from fastai.vision import *
+from torch.autograd import Variable
 
 os.environ["TORCH_HOME"] = "/media/subhaditya/DATA/COSMO/Datasets-Useful"
 
 import warnings
+
 warnings.filterwarnings("ignore", category=UserWarning, module="torch.nn.functional")
 #%%
 

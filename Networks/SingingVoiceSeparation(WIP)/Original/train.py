@@ -1,17 +1,15 @@
 import argparse
-from datetime import datetime as dt
 import gc
 import json
 import os
 import random
+from datetime import datetime as dt
 
 import numpy as np
 import torch
 import torch.nn as nn
+from lib import dataset, nets, spec_utils
 
-from lib import dataset
-from lib import nets
-from lib import spec_utils
 
 # Split into train val
 def train_val_split(mix_dir, inst_dir, val_rate, val_filelist_json):

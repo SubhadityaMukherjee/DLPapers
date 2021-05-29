@@ -1,8 +1,9 @@
 from optparse import OptionParser
+
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import numpy as np
 
 # Define all the required options
 parser = OptionParser()

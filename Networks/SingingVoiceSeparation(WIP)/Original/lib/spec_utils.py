@@ -12,7 +12,7 @@ def crop_center(h1, h2, concat=True):
     h2_shape = h2.size()
 
     if h2_shape[3] < h1_shape[3]:
-        raise ValueError('h2_shape[3] must be greater than h1_shape[3]')
+        raise ValueError("h2_shape[3] must be greater than h1_shape[3]")
     s_time = (h2_shape[3] - h1_shape[3]) // 2
     # Identify the time of the waves to find the half of them
     e_time = s_time + h1_shape[3]
@@ -22,6 +22,7 @@ def crop_center(h1, h2, concat=True):
         return torch.cat([h1, h2], dim=1)
     else:
         return h2
+
 
 def calc_spec(X, hop_length):
     n_fft = (hop_length - 1) * 2
@@ -36,7 +37,7 @@ def calc_spec(X, hop_length):
 
 def mask_uninformative(mask, ref, thres=0.3, min_range=64, fade_area=32):
     if min_range < fade_area * 2:
-        raise ValueError('min_range must be >= fade_area * 2')
+        raise ValueError("min_range must be >= fade_area * 2")
     idx = np.where(ref.mean(axis=(0, 1)) < thres)[0]
     starts = np.insert(idx[np.where(np.diff(idx) != 1)[0] + 1], 0, idx[0])
     ends = np.append(idx[np.where(np.diff(idx) != 1)[0]], idx[-1])
@@ -49,37 +50,33 @@ def mask_uninformative(mask, ref, thres=0.3, min_range=64, fade_area=32):
             if old_e is not None and s - old_e < fade_area:
                 s = old_e - fade_area * 2
             elif s != 0:
-                start_mask = mask[:, :, s:s + fade_area]
-                np.clip(
-                    start_mask + np.linspace(0, 1, fade_area), 0, 1,
-                    out=start_mask)
+                start_mask = mask[:, :, s : s + fade_area]
+                np.clip(start_mask + np.linspace(0, 1, fade_area), 0, 1, out=start_mask)
             if e != mask.shape[2]:
-                end_mask = mask[:, :, e - fade_area:e]
-                np.clip(
-                    end_mask + np.linspace(1, 0, fade_area), 0, 1,
-                    out=end_mask)
-            mask[:, :, s + fade_area:e - fade_area] = 1
+                end_mask = mask[:, :, e - fade_area : e]
+                np.clip(end_mask + np.linspace(1, 0, fade_area), 0, 1, out=end_mask)
+            mask[:, :, s + fade_area : e - fade_area] = 1
             old_e = e
 
     return mask
 
 
 def align_wave_head_and_tail(a, b, sr):
-    a_mono = a[:, :sr * 4].sum(axis=0)
-    b_mono = b[:, :sr * 4].sum(axis=0)
+    a_mono = a[:, : sr * 4].sum(axis=0)
+    b_mono = b[:, : sr * 4].sum(axis=0)
     a_mono -= a_mono.mean()
     b_mono -= b_mono.mean()
     offset = len(a_mono) - 1
-    delay = np.argmax(np.correlate(a_mono, b_mono, 'full')) - offset
+    delay = np.argmax(np.correlate(a_mono, b_mono, "full")) - offset
 
     if delay > 0:
         a = a[:, delay:]
     else:
-        b = b[:, np.abs(delay):]
+        b = b[:, np.abs(delay) :]
     if a.shape[1] < b.shape[1]:
-        b = b[:, :a.shape[1]]
+        b = b[:, : a.shape[1]]
     else:
-        a = a[:, :b.shape[1]]
+        a = a[:, : b.shape[1]]
 
     return a, b
 
@@ -87,17 +84,19 @@ def align_wave_head_and_tail(a, b, sr):
 def cache_or_load(mix_path, inst_path, sr, hop_length):
     _, mix_ext = os.path.splitext(mix_path)
     _, inst_ext = os.path.splitext(inst_path)
-    spec_mix_path = mix_path.replace(mix_ext, '.npy')
-    spec_inst_path = inst_path.replace(inst_ext, '.npy')
+    spec_mix_path = mix_path.replace(mix_ext, ".npy")
+    spec_inst_path = inst_path.replace(inst_ext, ".npy")
 
     if os.path.exists(spec_mix_path) and os.path.exists(spec_inst_path):
         X = np.load(spec_mix_path)
         y = np.load(spec_inst_path)
     else:
         X, _ = librosa.load(
-            mix_path, sr, False, dtype=np.float32, res_type='kaiser_fast')
+            mix_path, sr, False, dtype=np.float32, res_type="kaiser_fast"
+        )
         y, _ = librosa.load(
-            inst_path, sr, False, dtype=np.float32, res_type='kaiser_fast')
+            inst_path, sr, False, dtype=np.float32, res_type="kaiser_fast"
+        )
         X, _ = librosa.effects.trim(X)
         y, _ = librosa.effects.trim(y)
         X, y = align_wave_head_and_tail(X, y, sr)
@@ -125,13 +124,16 @@ def spec_to_wav(mag, phase, hop_length):
 
 if __name__ == "__main__":
     import sys
+
     X, _ = librosa.load(
-        sys.argv[1], 44100, False, dtype=np.float32, res_type='kaiser_fast')
+        sys.argv[1], 44100, False, dtype=np.float32, res_type="kaiser_fast"
+    )
     y, _ = librosa.load(
-        sys.argv[2], 44100, False, dtype=np.float32, res_type='kaiser_fast')
+        sys.argv[2], 44100, False, dtype=np.float32, res_type="kaiser_fast"
+    )
     X, _ = librosa.effects.trim(X)
     y, _ = librosa.effects.trim(y)
     X, y = align_wave_head_and_tail(X, y, 44100)
-    sf.write('test_i.wav', y.T, 44100)
-    sf.write('test_m.wav', X.T, 44100)
-    sf.write('test_v.wav', (X - y).T, 44100)
+    sf.write("test_i.wav", y.T, 44100)
+    sf.write("test_m.wav", X.T, 44100)
+    sf.write("test_v.wav", (X - y).T, 44100)

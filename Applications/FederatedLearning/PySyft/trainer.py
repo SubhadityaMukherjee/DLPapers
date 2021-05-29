@@ -14,7 +14,7 @@ def train(args, model, device, train_loader, optimizer, epoch):
         output = model(data)  # Passing batch through model
 
         # Will need to change everytime. Loss
-        loss = F.nll_loss(output, target )
+        loss = F.nll_loss(output, target)
 
         loss.backward()  # Backprop
         optimizer.step()  # Pass through optimizer
