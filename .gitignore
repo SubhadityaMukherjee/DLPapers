@@ -1,5 +1,4 @@
 *.pth
-*.pdf
 *.onnx
 .vscode/settings.json
 Neural Fabric/.ipynb_checkpoints/neuralFabric-checkpoint.ipynb
